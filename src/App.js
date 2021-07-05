@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./app.css";
+import "./App.css";
 //importing components
 import Home from "./components/Home";
 import About from "./components/About";
