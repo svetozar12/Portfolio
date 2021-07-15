@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function About() {
+  const Fetch = async () => {
+    const response = await fetch("http://localhost:3001/download");
+    console.log(response);
+  };
+  useEffect(() => {
+    Fetch();
+  }, []);
   return (
     <>
       <div className="about" id="about">
@@ -13,11 +20,11 @@ function About() {
           projects,hire me for specific job or long term, both are fine for me
           and will be ruled by your requirements.
         </p>
-        <button className="btn-cv">
-          <a href="/images/myw3schoolsimage.jpg" downlaod="foo.txt">
-            Download CV
-          </a>
-        </button>
+        <form action="../../download" method="get">
+          <button type="submit" className="btn-cv">
+            Hi
+          </button>
+        </form>
       </div>
     </>
   );

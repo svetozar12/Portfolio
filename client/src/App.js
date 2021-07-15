@@ -17,19 +17,12 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  const [duta, setDuta] = useState(null);
-  useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((duta) => setDuta(duta.message));
-  }, []);
   //!above is about backend
   const [services, setServices] = useState(data);
   const [skill, setDataProgress] = useState(dataProgress);
   const [project, setProject] = useState(projects);
   return (
     <>
-      <h1>{!duta ? "Loading..." : duta}</h1>
       <Home />
       <About />
       <div className="flex-services">
