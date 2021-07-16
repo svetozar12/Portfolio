@@ -488,9 +488,102 @@ input[type="email"] {
   font-size: 38px;
 }
 
-/* @media (max-width: 400px) {
-  .svetozar-gospodinov {
-    font-size: 12px;
-    color: red;
+@media (min-width: 486px) {
+  .header-background-image {
+    height: 19.5rem;
   }
-} */
+  .links {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 754px) {
+  .header-background-image {
+    height: 27rem;
+  }
+}
+
+@media (min-width: 964px) {
+  .header-background-image {
+    height: 33.5rem;
+  }
+  .progress-bar-flex {
+    width: 24%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header-background-image {
+    height: 41.9rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  .header-background-image {
+    height: 47.2rem;
+  }
+  .progress-bar-flex {
+    width: 17%;
+  }
+  .svetozar-gospodinov {
+    margin: 1rem;
+    font-size: calc(min(3rem, 1.4rem));
+  }
+}
+
+@media (min-width: 1500px) {
+  /*change nav from here*/
+  .header-background-image {
+    height: 51.3rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  .none {
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 4rem;
+    opacity: 1;
+    position: fixed;
+    transition: 0.15s;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+  .none .links {
+    flex-direction: row;
+    display: fixed;
+  }
+  .big-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .big-res .Services {
+    width: 30%;
+  }
+  .links a:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-background-image {
+    height: 51.8rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-background-image {
+    height: 63rem;
+  }
+  .progress-bar-flex {
+    width: 14%;
+  }
+}

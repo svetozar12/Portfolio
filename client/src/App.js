@@ -27,9 +27,11 @@ function App() {
       <About />
       <div className="flex-services">
         <h1 className="myServices">My services</h1>
-        {services.map((service) => {
-          return <Services key={service.id} {...service} />;
-        })}
+        <div className="big-res">
+          {services.map((service) => {
+            return <Services key={service.id} {...service} />;
+          })}
+        </div>
         <div className="underline-black"></div>
       </div>
       <div className="skills">
