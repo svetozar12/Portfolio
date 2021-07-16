@@ -1,16 +1,26 @@
+const port = 3001;
+
 const express = require("express");
-const cors = require("cors");
 const app = express();
+const bodyParser = require("body-parser");
 
-app.use(cors());
+//middleware / routing
 
-app.get("/download", function (req, res) {
-  const file = `${__dirname}/upload_folder/file.txt`;
+app.use(express.static(__dirname + "/public"));
+
+app.use(
+  bodyParser.urlencoded({
+    extended: false,
+  }),
+);
+
+app.use(bodyParser.json());
+
+app.post("/", function (req, res) {
+  const file = `${__dirname}/file.txt`;
   res.download(file);
-  console.log(`it wokrs`);
 });
 
-const port = process.env.PORT || 3001;
 app.listen(port, () => {
-  console.log(`server is running on port: ${port}`);
+  console.log(`My port is running on port ${port}`);
 });

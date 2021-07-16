@@ -26,7 +26,7 @@ function Contact() {
           );
         })}
 
-        <form action="">
+        <form action="/contact" method="post">
           <label>
             Message me
             <div className="underline-form-black"></div>
