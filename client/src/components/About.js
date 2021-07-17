@@ -20,11 +20,11 @@ function About() {
           projects,hire me for specific job or long term, both are fine for me
           and will be ruled by your requirements.
         </p>
-        <form action="/" method="post">
+        <a target="_blank" href="http://localhost:3001/">
           <button type="submit" name="submit" className="btn-cv">
             Download CV
           </button>
-        </form>
+        </a>
       </div>
     </>
   );

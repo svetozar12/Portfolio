@@ -17,7 +17,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  //!above is about backend
   const [services, setServices] = useState(data);
   const [skill, setDataProgress] = useState(dataProgress);
   const [project, setProject] = useState(projects);
