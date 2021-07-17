@@ -1,2 +1,0 @@
-It worked
-  // "proxy": "https://fullstack-app-frontend-backend.herokuapp.com/",

@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.toTop {
+  font-size: 40px;
+  border-radius: 25px;
+  background-color: red;
+  position: fixed;
+  z-index: 2;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.underline-black {
+  width: 30%;
+  height: 0.2rem;
+  background-color: black;
+  margin-bottom: 4.5rem;
+}
+/*Home component styling*/
+.header-background-image {
+  width: 100%;
+  height: 16rem;
+  background-image: url("//zdblogs.zohocorp.com/creator/decode/sites/creator/decode/files/2020-12/VPL-04%20%281%29.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.svetozar-gospodinov {
+  margin: 1rem;
+  font-size: calc(min(1rem, 0.8rem));
+}
+
+h1 {
+  font-weight: bolder;
+}
+/*About component styling*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 2rem;
+}
+
+.about h3 {
+  text-indent: -8.8rem;
+  margin-bottom: 1rem;
+  margin-left: calc(2.9rem + min(2rem + 10%));
+  font-size: calc(1vw + 1rem);
+}
+
+.about p {
+  text-align: justify;
+}
+
+.about button {
+  font-size: 1rem;
+  padding: 0.5rem;
+
+  margin-top: 1rem;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+}
+
+.underline {
+  width: 30%;
+  height: 0.2rem;
+  background-color: purple;
+  margin-bottom: 4.5rem;
+}
+/*hamburger*/
+.none {
+  background-color: white;
+  width: 0px;
+  font-size: 0px;
+  height: 40rem;
+  opacity: 1;
+  position: fixed;
+  transition: 0.15s;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  transition: 0.15s;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.links {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-nav .links a {
+  display: flex;
+  font-size: 29px;
+  margin: 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: 0.15s;
+}
+
+.none .links a {
+  display: flex;
+  margin: 4rem;
+  text-decoration: none;
+  color: black;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav .links a:hover {
+  color: rgb(206, 130, 68);
+}
+.hide {
+  visibility: none;
+  transition: 10s;
+}
+.hamburger .burger-1,
+.hamburger .burger-2,
+.hamburger .burger-3 {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.change .burger-1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  transition: 0.2s;
+}
+
+.change .burger-2 {
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.change .burger-3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  transition: 0.2s;
+}
+
+.hamburger {
+  cursor: pointer;
+  position: fixed;
+  margin: 0.7rem;
+  z-index: 2;
+}
+
+/*Services component styling*/
+.flex-services {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myServices {
+  color: white;
+  font-weight: bold;
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+.myServices::before {
+  content: "━ ";
+  margin-bottom: 1rem;
+}
+
+.myServices::after {
+  content: " ━";
+}
+
+.Services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.services-boxes {
+  background-color: rgb(40, 41, 43);
+  height: 20rem;
+  width: min(350px, 70%);
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.services-boxes h1 {
+  color: white;
+}
+
+.services-boxes:hover {
+  color: red;
+}
+
+.Services p {
+  margin-top: 1rem;
+  color: white;
+}
+
+/*Skills component styling*/
+.skills {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ul {
+  margin-left: 1rem;
+}
+ul li {
+  list-style: none;
+  margin-top: 0.2rem;
+}
+
+.progress {
+  width: 100%;
+  width: 260px;
+  height: 6px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, black 0%, gray 83%);
+  display: block;
+  height: 100%;
+}
+
+.progress-bar-flex {
+  display: flex;
+  width: 69%;
+  justify-content: flex-end;
+}
+
+.absolute {
+  position: absolute;
+}
+.skills-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+}
+
+.skills-btn a {
+  text-decoration: none;
+  color: white;
+}
+/*Projects component styling*/
+.projects {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.project-box {
+  background: hsl(225, 4%, 20%);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.git svg {
+  font-size: 60px;
+  color: black;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev {
+  margin: 0.8rem 0.1rem;
+  color: white;
+  background-color: black;
+  font-size: 36px;
+  border: none;
+  transition: 1s;
+}
+
+.prev:hover {
+  color: rgb(182, 67, 0);
+  transition: 1s;
+}
+
+.next {
+  margin: 0.4rem 0.1rem;
+  color: white;
+  background-color: black;
+  font-size: 36px;
+  border: none;
+}
+
+.next:hover {
+  color: rgb(182, 67, 0);
+  transition: 1s;
+}
+
+.prev-slide {
+  opacity: 0;
+  display: none !important;
+}
+
+.main-slide {
+  opacity: 1;
+}
+
+.next-slide {
+  opacity: 0;
+  display: none !important;
+}
+
+.main-slide {
+  z-index: 2;
+  transition: 1s;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/*Contact component styling*/
+.contact-me article p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.contact-me label {
+  margin: 2rem;
+  font-size: 20px;
+  border-bottom-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.underline-form-black {
+  width: 70%;
+  height: 0.2rem;
+  margin-top: 0.2rem;
+  background-color: black;
+}
+
+.contact-me form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.contact-me form input {
+  margin: 0.3rem;
+  border-radius: 10px;
+  height: 24px;
+}
+input[type="text"] {
+  padding: 0.05rem;
+  padding-left: 0.3rem;
+}
+
+input[type="email"] {
+  padding: 0.05rem;
+  padding-left: 0.3rem;
+}
+.contact-me form textarea {
+  resize: none;
+  border-radius: 10px;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  padding-left: 0.3rem;
+}
+
+.contact-me form button {
+  margin: 0.3rem;
+  padding: 0.6rem;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+}
+
+.contact-me ul {
+  border: 1px solid;
+  max-width: 8rem;
+  position: relative;
+}
+
+.icons-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0.6rem;
+}
+
+.icons-info svg {
+  font-size: 28px;
+  margin: 0.3rem;
+}
+/*Footer component styling*/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  margin: 1rem;
+  text-align: justify;
+}
+
+.footer-line {
+  margin: 1rem;
+  width: 88%;
+  height: 0.15rem;
+  background: hsl(225, 4%, 20%);
+}
+
+.section-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one a svg {
+  color: black;
+  font-size: 38px;
+  margin-right: 0.2rem;
+}
+
+.section-one a svg:hover {
+  color: hsl(225, 4%, 20%);
+  font-size: 38px;
+}
+
+@media (min-width: 486px) {
+  .header-background-image {
+    height: 19.5rem;
+  }
+  .links {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 754px) {
+  .header-background-image {
+    height: 27rem;
+  }
+}
+
+@media (min-width: 964px) {
+  .header-background-image {
+    height: 33.5rem;
+  }
+  .progress-bar-flex {
+    width: 24%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .header-background-image {
+    height: 41.9rem;
+  }
+}
+
+@media (min-width: 1360px) {
+  .header-background-image {
+    height: 47.2rem;
+  }
+  .progress-bar-flex {
+    width: 17%;
+  }
+  .svetozar-gospodinov {
+    margin: 1rem;
+    font-size: calc(min(3rem, 1.4rem));
+  }
+}
+
+@media (min-width: 1500px) {
+  /*change nav from here*/
+  .header-background-image {
+    height: 51.3rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  .none {
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 4rem;
+    opacity: 1;
+    position: fixed;
+    transition: 0.15s;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+  }
+  .none .links {
+    flex-direction: row;
+    display: fixed;
+  }
+  .big-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .big-res .Services {
+    width: 30%;
+  }
+  .links a:hover {
+    border-bottom: 1px solid;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-background-image {
+    height: 51.8rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-background-image {
+    height: 63rem;
+  }
+  .progress-bar-flex {
+    width: 14%;
+  }
+}
