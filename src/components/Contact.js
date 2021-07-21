@@ -1,8 +1,29 @@
 import React, { useState } from "react";
 import contactInfo from "./data/contactInfo";
 import { VscInfo } from "react-icons/vsc";
+import emailjs from "emailjs-com";
 function Contact() {
   const [data, setData] = useState(contactInfo);
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_m20dnx9",
+        "template_57pdgkd",
+        e.target,
+        "user_SelMTnxyCjkXNj0ZJoAri",
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+    e.target.reset();
+  }
   return (
     <>
       <div className="contact-me" id="contacts">
@@ -26,7 +47,7 @@ function Contact() {
           );
         })}
 
-        <form action="/contact" method="post">
+        <form onSubmit={sendEmail}>
           <label>
             Message me
             <div className="underline-form-black"></div>
@@ -36,24 +57,21 @@ function Contact() {
             onBlur={(e) => (e.target.placeholder = "Name")}
             type="text"
             placeholder="Name"
-            name=""
-            id=""
+            name="name"
           />
           <input
             type="email"
             onFocus={(e) => (e.target.placeholder = "")}
             onBlur={(e) => (e.target.placeholder = "Email")}
             placeholder="Email"
-            name=""
-            id=""
+            name="email"
           />
           <input
             type="text"
             onFocus={(e) => (e.target.placeholder = "")}
             onBlur={(e) => (e.target.placeholder = "Subject")}
             placeholder="Subject"
-            name=""
-            id=""
+            name="subject"
           />
           <br />
           <textarea
@@ -61,9 +79,9 @@ function Contact() {
             onFocus={(e) => (e.target.placeholder = "")}
             onBlur={(e) => (e.target.placeholder = "Message")}
             placeholder=" Message"
-            id=""
             cols="25"
             rows="5"
+            name="message"
           ></textarea>
           <br />
           <button type="submit">Send message</button>
