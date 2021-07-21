@@ -11,7 +11,6 @@ import projects from "./components/data/projectsData";
 import Home from "./components/Home";
 import About from "./components/About";
 import Services from "./components/Services";
-import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -36,17 +35,25 @@ function App() {
       <div className="skills">
         <h1>My skills in web development</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          voluptatem iusto voluptatum corporis velit cum, accusamus quia
-          laboriosam deserunt dolorum blanditiis provident error, eaque ob
+          I already have a lot experience with the internet technologies HTML5,
+          CSS3, JavaScript,Git, React and some experience with NodeJs. I know
+          how to solve a problems and when there are some that. I can solve it.
+          I am happy to learn how to overcome them The projects I'm working on
+          constantly are in my github account, as well as learned the basic
+          commands for "git". I have basic concepts in the field of networks and
+          how the connection between the client and the server works. I speak a
+          good working English.
         </p>
-        <button className="skills-btn">
-          <a href="">Read more</a>
-        </button>
+
+        <a href="#about">
+          <button className="skills-btn">Read more</button>
+        </a>
       </div>
-      {skill.map((skills) => {
-        return <Skills key={skills.id} {...skills} />;
-      })}
+      {/* <div className="percent-container">
+        {skill.map((skills) => {
+          return <Skills key={skills.id} {...skills} />;
+        })}
+      </div> */}
       <Projects />
       <Contact />
       <Footer />

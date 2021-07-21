@@ -34,58 +34,63 @@ function Contact() {
             project which i can make.
           </p>
         </article>
-        {data.map((contactInfo) => {
-          const { id, first, second } = contactInfo;
-          return (
-            <div key={id} className="icons-info">
-              <VscInfo />
-              <div className="info">
-                <p>{first}</p>
-                <p>{second}</p>
+        <div className="boxi">
+          {data.map((contactInfo) => {
+            const { id, first, second } = contactInfo;
+            return (
+              <div key={id} className="icons-info">
+                <VscInfo />
+                <div className="info">
+                  <p>{first}</p>
+                  <p>{second}</p>
+                </div>
               </div>
-            </div>
-          );
-        })}
-
-        <form onSubmit={sendEmail}>
-          <label>
-            Message me
-            <div className="underline-form-black"></div>
-          </label>
-          <input
-            onFocus={(e) => (e.target.placeholder = "")}
-            onBlur={(e) => (e.target.placeholder = "Name")}
-            type="text"
-            placeholder="Name"
-            name="name"
-          />
-          <input
-            type="email"
-            onFocus={(e) => (e.target.placeholder = "")}
-            onBlur={(e) => (e.target.placeholder = "Email")}
-            placeholder="Email"
-            name="email"
-          />
-          <input
-            type="text"
-            onFocus={(e) => (e.target.placeholder = "")}
-            onBlur={(e) => (e.target.placeholder = "Subject")}
-            placeholder="Subject"
-            name="subject"
-          />
-          <br />
-          <textarea
-            name=""
-            onFocus={(e) => (e.target.placeholder = "")}
-            onBlur={(e) => (e.target.placeholder = "Message")}
-            placeholder=" Message"
-            cols="25"
-            rows="5"
-            name="message"
-          ></textarea>
-          <br />
-          <button type="submit">Send message</button>
-        </form>
+            );
+          })}
+        </div>
+        <div className="outer-form">
+          <div className="inner-form">
+            <form onSubmit={sendEmail}>
+              <label>
+                Message me
+                <div className="underline-form-black"></div>
+              </label>
+              <input
+                onFocus={(e) => (e.target.placeholder = "")}
+                onBlur={(e) => (e.target.placeholder = "Name")}
+                type="text"
+                placeholder="Name"
+                name="name"
+              />
+              <input
+                type="email"
+                onFocus={(e) => (e.target.placeholder = "")}
+                onBlur={(e) => (e.target.placeholder = "Email")}
+                placeholder="Email"
+                name="email"
+              />
+              <input
+                type="text"
+                onFocus={(e) => (e.target.placeholder = "")}
+                onBlur={(e) => (e.target.placeholder = "Subject")}
+                placeholder="Subject"
+                name="subject"
+              />
+              <br />
+              <textarea
+                name=""
+                onFocus={(e) => (e.target.placeholder = "")}
+                onBlur={(e) => (e.target.placeholder = "Message")}
+                placeholder=" Message"
+                cols="25"
+                rows="5"
+                name="message"
+              ></textarea>
+              <br />
+              <button type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
       </div>
     </>
   );

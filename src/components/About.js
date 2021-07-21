@@ -13,14 +13,24 @@ function About() {
           projects,hire me for specific job or long term, both are fine for me
           and will be ruled by your requirements.
         </p>
-        <a
-          target="_blank"
-          href="https://fullstack-app-frontend-backend.herokuapp.com"
-        >
-          <button type="submit" name="submit" className="btn-cv">
-            Download CV
-          </button>
-        </a>
+        <div>
+          <a
+            target="_blank"
+            href="https://fullstack-app-frontend-backend.herokuapp.com/cv-en"
+          >
+            <button type="submit" name="submit" className="btn-cv">
+              Download CV-EN
+            </button>
+          </a>
+          <a
+            target="_blank"
+            href="https://fullstack-app-frontend-backend.herokuapp.com/cv-bg"
+          >
+            <button type="submit" name="submit" className="btn-cv">
+              Download CV-BG
+            </button>
+          </a>
+        </div>
       </div>
     </>
   );
