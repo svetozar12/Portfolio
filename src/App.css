@@ -1,8 +1,16 @@
+/*start of universal classes*/
 * {
   margin: 0;
   padding: 0;
   font-family: Times, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
+* p {
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+/*end of universal classes*/
 
 .toTop {
   font-size: 40px;
@@ -47,6 +55,9 @@ h1 {
   font-weight: bolder;
 }
 /*About component styling*/
+.btn-about-flex {
+  display: flex;
+}
 .about {
   display: flex;
   justify-content: center;
@@ -76,6 +87,7 @@ h1 {
   color: white;
   transition: 0.5s;
   margin: 1.4rem 1rem 0.1rem 1rem;
+  cursor: pointer;
 }
 
 .about button:hover {
@@ -93,14 +105,12 @@ h1 {
 /*hamburger*/
 .none {
   background-color: white;
-  width: 0px;
-  font-size: 0px;
+  display: none;
   height: 40rem;
   opacity: 1;
   position: fixed;
-  transition: 0.15s;
   z-index: 1;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -111,30 +121,36 @@ h1 {
   height: 100%;
   opacity: 1;
   position: fixed;
-  transition: 0.15s;
-  z-index: 1;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .links {
   margin-bottom: 3rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  flex-direction: column;
 }
 
 .mobile-nav .links a {
   display: flex;
-  font-size: 29px;
-  margin: 1.5rem;
+  font-size: 40px;
+  margin: 2.8rem;
   text-decoration: none;
-  color: black;
-  transition: 0.15s;
-  width: 100%;
+  color: rgb(110, 110, 110);
   height: 2rem;
+}
+
+.mobile-nav .links a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.href-underline {
+  width: 70%;
+  height: 0.1rem;
+  background-color: black;
 }
 
 .none .links a {
@@ -150,49 +166,43 @@ h1 {
   align-items: center;
 }
 
-.mobile-nav .links a:hover {
-  color: rgb(206, 130, 68);
-}
-
-.links a:hover {
-  background-color: black;
-  color: white;
-}
-
 .hide {
   visibility: none;
-  transition: 10s;
 }
-.hamburger .burger-1,
-.hamburger .burger-2,
-.hamburger .burger-3 {
+.burger-1,
+.burger-2,
+.burger-3 {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   margin: 6px 0;
   transition: 0.2s;
+  border: 0.1px solid white;
 }
 
 .change .burger-1 {
   transform: rotate(-45deg) translate(-9px, 6px);
   transition: 0.2s;
+  border: none;
 }
 
 .change .burger-2 {
   opacity: 0;
   transition: 0.2s;
+  border: none;
 }
 
 .change .burger-3 {
   transform: rotate(45deg) translate(-8px, -8px);
   transition: 0.2s;
+  border: none;
 }
 
 .hamburger {
   cursor: pointer;
   position: fixed;
   margin: 0.7rem;
-  z-index: 2;
+  z-index: 1000;
 }
 
 /*Services component styling*/
@@ -313,6 +323,9 @@ ul li {
   color: white;
   margin: 1.4rem 1rem;
   transition: 0.5s;
+  cursor: pointer;
+  border: none;
+  border: 2px solid black;
 }
 .skills-btn:hover {
   color: black;
@@ -334,6 +347,8 @@ ul li {
   color: white;
   margin-top: 1rem;
   padding: 1rem;
+  position: relative;
+  z-index: 0;
 }
 
 .project-box {
@@ -413,6 +428,7 @@ ul li {
   margin: 1rem;
   font-size: 1.2rem;
   text-align: justify;
+  line-height: 2rem;
 }
 
 .contact-me label {
@@ -488,10 +504,6 @@ input[type="email"] {
 }
 
 .icons-info {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: 0.6rem;
 }
 
 .icons-info svg {
@@ -517,8 +529,12 @@ input[type="email"] {
   justify-content: center;
   align-items: center;
   margin: 2rem;
-  width: 100%;
 }
+
+.mini-boxi {
+  border: 1px solid transparent;
+}
+
 /*Footer component styling*/
 .footer {
   display: flex;
@@ -557,18 +573,44 @@ input[type="email"] {
   font-size: 38px;
 }
 
+@media (min-width: 120px) {
+  /* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  } */
+  .skills p {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+  }
+  .boxi {
+    flex-direction: column;
+  }
+  .inner-form {
+    width: 75%;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+}
+
 @media (min-width: 486px) {
   .header-background-image {
-    height: 19.5rem;
+    height: 24.5rem;
   }
   .links {
     margin-bottom: 0rem;
+  }
+  .boxi {
+    flex-direction: column;
   }
 }
 
 @media (min-width: 754px) {
   .header-background-image {
-    height: 27rem;
+    height: 30rem;
   }
   .boxi {
     display: flex;
@@ -580,16 +622,19 @@ input[type="email"] {
 
 @media (min-width: 964px) {
   .header-background-image {
-    height: 33.5rem;
+    height: 37.5rem;
   }
   .progress-bar-flex {
     width: 24%;
+  }
+  .inner-form {
+    width: 50%;
   }
 }
 
 @media (min-width: 1150px) {
   .header-background-image {
-    height: 41.9rem;
+    height: 42.9rem;
   }
 }
 
@@ -608,6 +653,11 @@ input[type="email"] {
 
 @media (min-width: 1500px) {
   /*change nav from here*/
+
+  .links a:hover {
+    background-color: black;
+    color: white;
+  }
   .header-background-image {
     height: 51.3rem;
   }
@@ -621,7 +671,6 @@ input[type="email"] {
     height: 4rem;
     opacity: 1;
     position: fixed;
-    transition: 0.15s;
     z-index: 3;
     display: flex;
     align-items: center;
@@ -644,18 +693,34 @@ input[type="email"] {
 
 @media (min-width: 1600px) {
   .header-background-image {
-    height: 51.8rem;
-  }
-  body {
-    overflow-x: hidden;
+    height: 63rem;
   }
 }
 
 @media (min-width: 1920px) {
   .header-background-image {
-    height: 63rem;
+    height: 63rem !important;
   }
   .progress-bar-flex {
     width: 14%;
   }
 }
+
+/*special media query only for the top image*/
+/* @media (min-width: 903px) {
+  .header-background-image {
+    height: 38rem;
+  }
+}
+
+@media (min-width: 1161px) {
+  .header-background-image {
+    height: 43rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .header-background-image {
+    height: 21em;
+  }
+} */

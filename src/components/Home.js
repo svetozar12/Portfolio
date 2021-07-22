@@ -4,6 +4,7 @@ import Nav from "./Nav";
 function Home() {
   return (
     <>
+      {/* have id 1 */}
       <Nav />
       <div className="header-background-image" id="home">
         <div className="svetozar-gospodinov">

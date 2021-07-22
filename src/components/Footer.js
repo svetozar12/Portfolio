@@ -10,10 +10,10 @@ function Footer() {
       <div className="footer-line"></div>
       <div className="section-one">
         <p>© {getDate} Svetozar Gospodinov</p>
-        <a href="">
+        <a target="_blank" href="https://github.com/svetozar12">
           <VscGithubInverted />
         </a>
-        <a href="">
+        <a target="_blank" href="https://www.instagram.com/heyits.me902/">
           <FaInstagramSquare />
         </a>
       </div>

@@ -4,8 +4,6 @@ import projects from "./data/projectsData";
 //importing icons
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
-// TODO: The readMore button doesnt do a thing atm so make it do smth and the same goes for the form.
-
 function Projects() {
   const [index, setIndex] = useState(0);
   const [project, setProject] = useState(projects);
@@ -19,7 +17,7 @@ function Projects() {
   return (
     <>
       <div className="projects">
-        <h1>My projects</h1>
+        <h1 id="projects">My projects</h1>
         <div className="slider">
           {project.map((projects, projectsIndex) => {
             const { id, image, link, name, info } = projects;

@@ -35,18 +35,20 @@ function Contact() {
           </p>
         </article>
         <div className="boxi">
-          {data.map((contactInfo) => {
-            const { id, first, second } = contactInfo;
-            return (
-              <div key={id} className="icons-info">
-                <VscInfo />
-                <div className="info">
-                  <p>{first}</p>
-                  <p>{second}</p>
+          <div className="mini-boxi">
+            {data.map((contactInfo) => {
+              const { id, first, second } = contactInfo;
+              return (
+                <div key={id} className="icons-info">
+                  <VscInfo />
+                  <div className="info">
+                    <p>{first}</p>
+                    <p>{second}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
         <div className="outer-form">
           <div className="inner-form">

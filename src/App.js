@@ -19,10 +19,14 @@ function App() {
   const [services, setServices] = useState(data);
   const [skill, setDataProgress] = useState(dataProgress);
   const [project, setProject] = useState(projects);
+  const [widthState, setWidth] = useState(window.innerWidth);
+
   return (
     <>
       <Home />
       <About />
+      {/* <p>wid: {() => width}</p> */}
+
       <div className="flex-services">
         <h1 className="myServices">My services</h1>
         <div className="big-res">

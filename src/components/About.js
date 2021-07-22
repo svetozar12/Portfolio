@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 function About() {
   return (
     <>
+      {/* have id 2 */}
       <div className="about" id="about">
         <h1>About me</h1>
         <div className="underline"></div>
@@ -13,7 +14,7 @@ function About() {
           projects,hire me for specific job or long term, both are fine for me
           and will be ruled by your requirements.
         </p>
-        <div>
+        <div className="btn-about-flex">
           <a
             target="_blank"
             href="https://fullstack-app-frontend-backend.herokuapp.com/cv-en"
