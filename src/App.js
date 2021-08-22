@@ -5,8 +5,7 @@ import "./App.css";
 import { AiOutlineCaretUp } from "react-icons/ai";
 //importing data
 import data from "./components/data/data";
-import dataProgress from "./components/data/progressBars";
-import projects from "./components/data/projectsData";
+
 //importing components
 import Home from "./components/Home";
 import About from "./components/About";
@@ -14,28 +13,32 @@ import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+// curves and waves components
+import Curves from "./components/curves/Curves";
+import FlippedCurves from "./components/curves/flipedCurves";
+import LayeredWave from "./components/curves/LayeredWave";
+import FlippedLayeredWaves from "./components/curves/FlippedLayeredWaves";
 
 function App() {
   const [services, setServices] = useState(data);
-  const [skill, setDataProgress] = useState(dataProgress);
-  const [project, setProject] = useState(projects);
-  const [widthState, setWidth] = useState(window.innerWidth);
 
   return (
     <>
       <Home />
+      <LayeredWave />
       <About />
-      {/* <p>wid: {() => width}</p> */}
-
+      {/* services component start */}
+      <FlippedLayeredWaves />
       <div className="flex-services">
         <h1 className="myServices">My services</h1>
         <div className="big-res">
           {services.map((service) => {
-            return <Services key={service.id} {...service} />;
+            return <Services key={service.id} {...service} Curves={Curves} />;
           })}
         </div>
         <div className="underline-black"></div>
       </div>
+      <Curves curve="120" />
       <div className="skills">
         <h1>My skills in web development</h1>
         <p>
@@ -53,12 +56,11 @@ function App() {
           <button className="skills-btn">Read more</button>
         </a>
       </div>
-      {/* <div className="percent-container">
-        {skill.map((skills) => {
-          return <Skills key={skills.id} {...skills} />;
-        })}
-      </div> */}
+      {/* services component end */}
+      <FlippedLayeredWaves />
       <Projects />
+      <Curves curve="320" />
+      {/* <Curves /> */}
       <Contact />
       <Footer />
       <div className="toTop">
@@ -66,6 +68,6 @@ function App() {
       </div>
     </>
   );
-} //410x576
+}
 
 export default App;
