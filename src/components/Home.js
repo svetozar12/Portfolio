@@ -1,10 +1,9 @@
 import React from "react";
-import Nav from "./Nav";
+import Nav from "./sub-components/Nav";
 
 function Home() {
   return (
     <>
-      {/* have id 1 */}
       <Nav />
       <div className="header-background-image" id="home">
         <div className="svetozar-gospodinov">

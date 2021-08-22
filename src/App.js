@@ -6,6 +6,9 @@ import { AiOutlineCaretUp } from "react-icons/ai";
 //importing data
 import data from "./components/data/data";
 
+// importing js libaries
+// import ParticleBG from "./components/ParticleBG";
+
 //importing components
 import Home from "./components/Home";
 import About from "./components/About";
@@ -24,6 +27,7 @@ function App() {
 
   return (
     <>
+      {/* <ParticleBG /> */}
       <Home />
       <LayeredWave />
       <About />
