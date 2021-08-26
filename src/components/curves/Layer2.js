@@ -1,7 +1,7 @@
 import React from "react";
 
-function FlippedLayeredWaves() {
+function Layer2() {
   return <div className="spacer layer2"></div>;
-}
+} //flipped layered waves
 
-export default FlippedLayeredWaves;
+export default Layer2;

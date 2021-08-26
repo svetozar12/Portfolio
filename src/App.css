@@ -617,13 +617,15 @@ input[type="email"] {
   aspect-ratio: 960/340;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
 .layer1 {
-  background-image: url("./assets/layered-waves.svg");
+  /* layered waves*/
+  background-image: url("./assets/layer1.svg");
 }
+
 .layer2 {
-  background-image: url("./assets/flipped-layered-waves.svg");
+  /*flipped layered waves*/
+  background-image: url("./assets/black-layer.svg");
 }

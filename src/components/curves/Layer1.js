@@ -1,7 +1,7 @@
 import React from "react";
 
-function LayeredWave() {
+function Layer1() {
   return <div className="spacer layer1"></div>;
 }
 
-export default LayeredWave;
+export default Layer1;
