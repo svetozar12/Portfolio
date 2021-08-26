@@ -69,9 +69,8 @@ h1 {
 }
 
 .about h3 {
-  text-indent: -8.8rem;
+  text-align: center;
   margin-bottom: 1rem;
-  margin-left: calc(2.9rem + min(2rem + 10%));
   font-size: calc(1vw + 1rem);
 }
 

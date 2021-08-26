@@ -9,15 +9,14 @@ function ParticleBG() {
         params={{
           particles: {
             number: {
-              value: 40,
+              value: 80,
               density: {
                 enable: true,
                 value_area: 1000,
               },
             },
             stroke: {
-              width: 5,
-              color: "red",
+              width: 10,
             },
           },
         }}
