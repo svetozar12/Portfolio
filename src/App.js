@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./App.css";
-//importing icons
-import { AiOutlineCaretUp } from "react-icons/ai";
 //importing data
 import data from "./data/data";
-
-// importing js libaries
-// import ParticleBG from "./components/ParticleBG";
 
 //importing components
 import Home from "./components/Header/Home";
@@ -17,32 +12,32 @@ import Projects from "./components/Main/Projects";
 import Contact from "./components/Main/Contact";
 import Footer from "./components/Footer/Footer";
 // curves and waves components
-import Curves from "./components/curves/Curves";
-import Layer2 from "./components/curves/Layer2";
-import Layer1 from "./components/curves/Layer1";
+import SimpleWave from "./components/curves/SimpleWave";
+import LayeredWaves from "./components/curves/LayeredWaves";
+import CombinedBlobs from "./components/curves/CombinedBlobs";
 
 function App() {
   const [services, setServices] = useState(data);
 
   return (
     <>
-      {/* <ParticleBG /> */}
       <Home />
-      <Layer1 />
-      <About />
+      <LayeredWaves />
+      <About CombinedBlobs={CombinedBlobs} />
       {/* services component start */}
-      <Layer2 />
+      <LayeredWaves flipped={true} />
       <div className="flex-services">
         <h1 className="myServices">My services</h1>
         <div className="big-res">
           {services.map((service) => {
-            return <Services key={service.id} {...service} Curves={Curves} />;
+            return <Services key={service.id} {...service} />;
           })}
         </div>
         <div className="underline-black"></div>
       </div>
-      <Layer1 />
+      <LayeredWaves />
       <div className="skills">
+        <CombinedBlobs />
         <h1>My skills in web development</h1>
         <p>
           I already have a lot experience with the internet technologies HTML5,
@@ -59,16 +54,12 @@ function App() {
           <button className="skills-btn">Read more</button>
         </a>
       </div>
+      <LayeredWaves flipped={true} />
       {/* services component end */}
-      <Layer2 />
       <Projects />
-      <Curves curve="200" />
-      {/* <Curves /> */}
+      <SimpleWave curve="200" />
       <Contact />
       <Footer />
-      <div className="toTop">
-        <AiOutlineCaretUp />
-      </div>
     </>
   );
 }

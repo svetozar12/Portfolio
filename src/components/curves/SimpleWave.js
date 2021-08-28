@@ -1,6 +1,6 @@
 import React from "react";
 
-function Curves(prop) {
+function SimpleWave(prop) {
   return (
     <div className="wave">
       <svg
@@ -19,4 +19,4 @@ function Curves(prop) {
   );
 }
 
-export default Curves;
+export default SimpleWave;

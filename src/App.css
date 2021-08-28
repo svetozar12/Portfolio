@@ -44,7 +44,7 @@ button:focus {
   color: white;
   position: absolute;
   top: 50%; /* Position Y halfway in */
-  left: 50%; /* Position X halfway in */
+  left: 22%; /* Position X halfway in */
   transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
 }
 
@@ -60,16 +60,17 @@ h1 {
 .btn-about-flex {
   display: flex;
 }
+
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 1rem 2rem;
+  height: 25rem;
 }
 
 .about h3 {
-  text-align: center;
   margin-bottom: 1rem;
   font-size: calc(1vw + 1rem);
 }
@@ -277,6 +278,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 25rem;
 }
 .skills p {
   margin: 1rem;
@@ -429,7 +431,7 @@ ul li {
 .contact-me article p {
   margin: 1rem;
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: center;
   line-height: 2rem;
 }
 
@@ -630,4 +632,13 @@ input[type="email"] {
 .layer2 {
   /*flipped layered waves*/
   background-image: url("./assets/black-layer.svg");
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+.blobs {
+  position: absolute;
+  z-index: -3;
 }
