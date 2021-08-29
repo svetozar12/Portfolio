@@ -8,7 +8,7 @@ function Nav() {
   function HamburgerLinks() {
     return (
       <>
-        {/* links */}
+        {/*have to fix transition animation of the nav mobile menu*/}
         <div
           className={toggle ? "hamburger change" : "hamburger"}
           onClick={() => setToggle(!toggle)}
@@ -72,7 +72,7 @@ function Nav() {
   };
   useEffect(() => {
     window.addEventListener("resize", checkSize);
-    console.log(width);
+    // console.log(width); testing purposes
     if (width <= 900) {
       setShow(false);
     } else {
@@ -84,7 +84,7 @@ function Nav() {
   });
   return (
     <>
-      <div className={toggle ? "mobile-nav " : null}>
+      <div className={toggle && "mobile-nav"}>
         {show ? <Navbar /> : <HamburgerLinks />}
       </div>
     </>
