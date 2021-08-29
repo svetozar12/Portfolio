@@ -11,6 +11,10 @@
   font-size: 1.2rem;
 }
 
+button {
+  overflow: hidden;
+}
+
 /*end of universal classes*/
 
 .toTop {
@@ -105,17 +109,6 @@ h1 {
   margin-bottom: 4.5rem;
 }
 /*hamburger*/
-.none {
-  background-color: white;
-  display: none;
-  height: 40rem;
-  opacity: 1;
-  position: fixed;
-  z-index: 1;
-  /* display: flex; */
-  align-items: center;
-  justify-content: center;
-}
 
 .mobile-nav {
   background-color: white;
@@ -149,28 +142,6 @@ h1 {
   opacity: 0.6;
 }
 
-.href-underline {
-  width: 70%;
-  height: 0.1rem;
-  background-color: black;
-}
-
-.none .links a {
-  display: flex;
-  margin: 4rem;
-  text-decoration: none;
-  color: black;
-  width: 100%;
-  height: 4rem;
-
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hide {
-  visibility: none;
-}
 .burger-1,
 .burger-2,
 .burger-3 {
@@ -205,6 +176,30 @@ h1 {
   position: fixed;
   margin: 0.7rem;
   z-index: 1000;
+}
+/* navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  font-size: 20px;
+  justify-content: center;
+  padding: 1rem;
+  background-color: black;
+  z-index: 999;
+}
+
+.navbar > a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.navbar > a:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /*Services component styling*/

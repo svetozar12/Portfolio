@@ -5,7 +5,7 @@ function CombinedBlobs() {
       <path fill="#d1d8e0">
         <animate
           attributeName="d"
-          dur="10s"
+          dur="5s"
           repeatCount="indefinite"
           values="M428,356Q373,462,263,440.5Q153,419,111.5,334.5Q70,250,110,163.5Q150,77,242,91Q334,105,408.5,177.5Q483,250,428,356Z;  
 
