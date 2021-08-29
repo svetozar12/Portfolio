@@ -5,9 +5,10 @@ function Nav() {
   const [width, setWidth] = useState(window.innerWidth);
   const [show, setShow] = useState(true);
 
-  function Hamburger() {
+  function HamburgerLinks() {
     return (
       <>
+        {/* links */}
         <div
           className={toggle ? "hamburger change" : "hamburger"}
           onClick={() => setToggle(!toggle)}
@@ -16,25 +17,40 @@ function Nav() {
           <div className="burger-2"></div>
           <div className="burger-3"></div>
         </div>
-        {/* links */}
-        <div className="links">
-          <a href="#home" onClick={() => setToggle(!toggle)}>
-            Home
-          </a>
-          <a href="#about" onClick={() => setToggle(!toggle)}>
-            About
-          </a>
-          <a href="#services" onClick={() => setToggle(!toggle)}>
-            Services
-          </a>
-          <a href="#projects" onClick={() => setToggle(!toggle)}>
-            Projects
-          </a>
-          <a href="#contacts" onClick={() => setToggle(!toggle)}>
-            Contacts
-          </a>
-          {/* small ass screen */}
-        </div>
+        {toggle ? (
+          <div className="links flex">
+            <li style={{ width: "100%" }}>
+              <a href="#home" onClick={() => setToggle(!toggle)}>
+                Home
+              </a>
+            </li>
+
+            <li style={{ width: "100%" }}>
+              <a href="#about" onClick={() => setToggle(!toggle)}>
+                About
+              </a>
+            </li>
+
+            <li style={{ width: "100%" }}>
+              <a href="#services" onClick={() => setToggle(!toggle)}>
+                Services
+              </a>
+            </li>
+
+            <li style={{ width: "100%" }}>
+              <a href="#projects" onClick={() => setToggle(!toggle)}>
+                Projects
+              </a>
+            </li>
+
+            <li style={{ width: "100%" }}>
+              <a href="#contacts" onClick={() => setToggle(!toggle)}>
+                Contacts
+              </a>
+            </li>
+            {/* small ass screen */}
+          </div>
+        ) : null}
       </>
     );
   }
@@ -68,8 +84,8 @@ function Nav() {
   });
   return (
     <>
-      <div className={toggle ? "mobile-nav" : null}>
-        {show ? <Navbar /> : <Hamburger />}
+      <div className={toggle ? "mobile-nav " : null}>
+        {show ? <Navbar /> : <HamburgerLinks />}
       </div>
     </>
   );
