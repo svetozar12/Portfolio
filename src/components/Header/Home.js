@@ -4,7 +4,6 @@ import ParticleBG from "./ParticleBG";
 const styles = {
   root: {
     fontFamily: "sans-serif",
-    textAlign: "center",
     width: "100%",
     height: "100vh",
     background: "#000",

@@ -18,9 +18,9 @@ function Nav() {
           <div className="burger-3"></div>
         </div>
         {toggle ? (
-          <div className="links flex">
+          <div className="links">
             <li style={{ width: "100%" }}>
-              <a href="#home" onClick={() => setToggle(!toggle)}>
+              <a href="#" onClick={() => setToggle(!toggle)}>
                 Home
               </a>
             </li>
@@ -58,7 +58,7 @@ function Nav() {
   function Navbar() {
     return (
       <ol className="navbar">
-        <a href="#home">Home</a>
+        <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
