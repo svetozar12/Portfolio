@@ -85,7 +85,7 @@ function Contact() {
                 onBlur={(e) => (e.target.placeholder = "Message")}
                 placeholder=" Message"
                 cols="25"
-                rows="5"
+                rows="1"
                 name="message"
               ></textarea>
               <br />
