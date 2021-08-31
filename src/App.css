@@ -69,23 +69,26 @@ button:focus {
 
 /*Home component styling*/
 
-.freeze {}
-
 .header-background-image {
     color: var(--main-white);
     position: absolute;
     margin: 0.3rem;
-    top: 50%;
-    /* Position Y halfway in */
-    left: 22%;
-    /* Position X halfway in */
-    transform: translate(-50%, -50%);
-    /* Move it halfway back(x,y) */
 }
 
 .svetozar-gospodinov {
     margin: 4rem;
-    font-size: calc(min(2rem, 2.9rem));
+}
+
+.svetozar-gospodinov>h4 {
+    font-size: 2vw;
+}
+
+.svetozar-gospodinov>h1 {
+    font-size: 5vw;
+}
+
+.svetozar-gospodinov>h2 {
+    font-size: 3vw;
 }
 
 h1 {
@@ -663,12 +666,33 @@ input[type="text"] {
     }
     .contact-me form textarea {
         resize: none;
-        border-radius: 10px;
         margin: 0.3rem;
-        padding: 0.5rem 0 0 3rem;
+        /* padding: 0.5rem 0 0 3rem; */
     }
     .skills,
     .about {
         height: unset;
+    }
+    .contact-me form input {
+        width: 50%;
+    }
+    form input,
+    textarea {
+        text-align: center;
+    }
+    .contact-me form>textarea {
+        padding: 0.05rem 1rem;
+    }
+    .svetozar-gospodinov {
+        margin: 1.2rem;
+    }
+    .svetozar-gospodinov>h4 {
+        font-size: 4vw;
+    }
+    .svetozar-gospodinov>h1 {
+        font-size: 7vw;
+    }
+    .svetozar-gospodinov>h2 {
+        font-size: 5vw;
     }
 }

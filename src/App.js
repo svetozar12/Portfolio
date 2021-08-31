@@ -30,7 +30,7 @@ function App() {
         CombinedBlobs={CombinedBlobs}
         MobileBlob={MobileBlob}
         show={show}
-      />{" "}
+      />
       {/* services component start */} <LayeredWaves flipped={true} />{" "}
       <div className="flex-services">
         <h1 className="myServices"> My services </h1>{" "}

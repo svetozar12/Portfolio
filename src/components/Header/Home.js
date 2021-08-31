@@ -8,7 +8,7 @@ const styles = {
     height: "100vh",
     background: "#000",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "start",
     alignItems: "center",
   },
 };
@@ -18,6 +18,13 @@ function Home() {
       <Nav />
       <div style={styles.root}>
         <ParticleBG />
+        <div className="header-background-image" id="home">
+          <div className="svetozar-gospodinov">
+            <h4>Hello, my name is</h4>
+            <h1>Svetozar Gospodinov</h1>
+            <h2>And i'm a front end developer</h2>
+          </div>
+        </div>
       </div>
     </>
   );
