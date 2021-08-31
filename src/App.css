@@ -1,5 +1,16 @@
 /*start of universal classes*/
 
+
+/* css debuger */
+
+
+/* 
+* {
+    color: red !important;
+    background: green !important;
+    outline: solid 0.25rem blue !important;
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -92,7 +103,7 @@ h1 {
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem;
-    height: 50vh;
+    height: 100vh;
 }
 
 .about h3 {
@@ -288,7 +299,7 @@ h1 {
 
 .skills {
     flex-direction: column;
-    height: 50vh;
+    height: 100vh;
 }
 
 .skills,
@@ -589,9 +600,6 @@ input[type="text"] {
 }
 
 
-/* s */
-
-
 /* end of wave component */
 
 
@@ -644,6 +652,7 @@ input[type="text"] {
 .blobs {
     position: absolute;
     z-index: -3;
+    background: 50% 50%;
 }
 
 @media (max-width: 900px) {

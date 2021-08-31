@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 
-function About({ CombinedBlobs }) {
+function About({ CombinedBlobs, show, MobileBlob }) {
   return (
     <>
       {/* have id 2 */}
       <div className="about" id="about">
-        <CombinedBlobs />
+        {show ? <CombinedBlobs /> : <MobileBlob />}
         <h1>About me</h1>
         <div className="underline"></div>
         <h3>I'm Svetozar Gospodiniov</h3>
