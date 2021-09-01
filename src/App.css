@@ -91,7 +91,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem;
-    height: 100vh;
+    height: 60vh;
 }
 
 .about h3 {
@@ -287,7 +287,7 @@ button:focus {
 
 .skills {
     flex-direction: column;
-    height: 100vh;
+    height: 60vh;
 }
 
 .skills,
@@ -619,7 +619,7 @@ input[type="text"] {
 /* lawyered wave component */
 
 .spacer {
-    aspect-ratio: 960/540;
+    aspect-ratio: 950/540;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
