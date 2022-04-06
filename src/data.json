@@ -1,0 +1,47 @@
+[
+  {
+    "skill_icon": "http://dummyimage.com/208x.png/5fa2dd/ffffff",
+    "skill_name": "Dhivehi",
+    "skill_description": "Occup of hv veh injured pick-up truck, pk-up/van nontraf"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/222x.png/cc0000/ffffff",
+    "skill_name": "Gagauz",
+    "skill_description": "Poisn by oth antacids and anti-gstrc-sec drugs, self-harm"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/200x.png/5fa2dd/ffffff",
+    "skill_name": "Macedonian",
+    "skill_description": "Unsp inj musc/tend posterior grp at low leg level, unsp leg"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/218x.png/dddddd/000000",
+    "skill_name": "Lithuanian",
+    "skill_description": "Superficial foreign body, unspecified ankle"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/225x.png/cc0000/ffffff",
+    "skill_name": "Lao",
+    "skill_description": "Jump/div into swim pool strk bottom causing oth injury, init"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/242x.png/dddddd/000000",
+    "skill_name": "Tajik",
+    "skill_description": "Wear of artic bearing surface of internal prosth l hip jt"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/209x.png/ff4444/ffffff",
+    "skill_name": "Ndebele",
+    "skill_description": "Age-rel osteopor w current path fracture, unsp femur, init"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/234x.png/cc0000/ffffff",
+    "skill_name": "Tok Pisin",
+    "skill_description": "Burn of unspecified degree of unspecified ear, init encntr"
+  },
+  {
+    "skill_icon": "http://dummyimage.com/244x.png/dddddd/000000",
+    "skill_name": "Burmese",
+    "skill_description": "Toxic effect of chewing tobacco, undetermined, subs encntr"
+  }
+]

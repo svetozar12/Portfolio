@@ -1,23 +1,48 @@
 import React from "react";
 import style from "../styles/Hamburger.module.css";
+import { useSelector, useDispatch } from "react-redux";
+import { IInitialSet } from "../redux/reducers/setReducer/state";
 
 const Hamburger = () => {
-  const [toggle, setToggle] = React.useState<boolean>(false);
+  const dispatch = useDispatch();
+  const state = useSelector(
+    (state: { setReducer: IInitialSet }) => state.setReducer,
+  );
   return (
     <div>
       <div
-        className={`${toggle && style.change} ${style.hamburger}`}
-        onClick={() => setToggle((currToggle) => !currToggle)}
+        className={`${state.toggleNav && style.change} ${style.hamburger}`}
+        onClick={() => dispatch({ type: "SET_NAV" })}
       >
-        <div className={`${style.burger_1} ${toggle && style.color_black}`}>
+        <div
+          className={`${style.burger_1} ${
+            state.toggleNav && style.color_black
+          }`}
+        >
           {" "}
         </div>
         <div className={style.burger_2}> </div>
-        <div className={`${style.burger_3} ${toggle && style.color_black}`}>
+        <div
+          className={`${style.burger_3} ${
+            state.toggleNav && style.color_black
+          }`}
+        >
           {" "}
         </div>
       </div>
-      <div className={style.menu}>Menu</div>
+      <div className={style.menu}>
+        <ul className="flex justify-center items-center">
+          <li>
+            <a href="">text</a>
+          </li>
+          <li>
+            <a href="">text</a>
+          </li>
+          <li>
+            <a href="">text</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
