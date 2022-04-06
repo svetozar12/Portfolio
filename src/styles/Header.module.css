@@ -1,0 +1,13 @@
+.post_transformed_button {
+  position: fixed;
+  bottom: 15px;
+  left: calc(100% - 75px);
+  transition: all 0.5s ease-in-out;
+}
+
+.pre_transformed_button {
+  position: absolute;
+  bottom: calc(100vh - 425px);
+  left: calc(50% - 110px);
+  transition: all 0.5s ease-in-out;
+}

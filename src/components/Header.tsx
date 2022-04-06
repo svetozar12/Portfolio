@@ -1,6 +1,16 @@
 import React from "react";
+import style from "../styles/Header.module.css";
+import { AiFillMessage } from "react-icons/ai";
 
 const Header = () => {
+  const [bottom, setBottom] = React.useState(false);
+  const buttonMessage = !bottom ? (
+    <div className="bg-red-500 w-16 h-16 rounded-full flex justify-center items-center duration-500">
+      <AiFillMessage className="w-8 h-8 text-white" />
+    </div>
+  ) : (
+    "LET'S TALK"
+  );
   return (
     <div
       className="flex justify-center items-center flex-col text-center"
@@ -9,17 +19,24 @@ const Header = () => {
         height: "600px",
       }}
     >
-      <h1 className="text-white font-bold text-4xl tracking-tight">
+      <h1
+        onClick={() => setBottom((currBottom) => !currBottom)}
+        className="text-white font-bold text-4xl tracking-tight"
+      >
         I&apos;m Svetozar Gospodinov
       </h1>
       <p className="text-white font-normal py-8 text-lg">
         Mid level Web developer from Varna
       </p>
       <button
-        className="px-1.5 py-3 w-52 bg-white text-me_purple rounded-3xl leading-5 tracking-widest text-xm font-bold"
+        className={`${
+          bottom
+            ? `${style.pre_transformed_button} px-1.5 py-4 w-60 bg-white text-me_purple rounded-full leading-5 tracking-widest text-xm font-bold hover:opacity-75`
+            : style.post_transformed_button
+        } duration-500`}
         type="button"
       >
-        LET&apos;S TALK
+        {buttonMessage}
       </button>
     </div>
   );
