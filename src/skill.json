@@ -1,0 +1,47 @@
+[
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "skill_name": "HTML",
+    "skill_description": "Merkel cell carcinoma of unsp eyelid, including canthus"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "skill_name": "CSS",
+    "skill_description": "Occup of sp off-rd mv injured in traffic accident, sequela"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "skill_name": "javaScript",
+    "skill_description": "Unspecified otitis externa, bilateral"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+    "skill_name": "React/NextJs",
+    "skill_description": "Drown due to fall/jump fr crushed canoe or kayak, sequela"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "skill_name": "Nodejs/ExpressJs",
+    "skill_description": "Superior glenoid labrum lesion of unsp shoulder, init encntr"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    "skill_name": "GraphQl-Api/Rest-Api",
+    "skill_description": "Oth disp fx of sixth cervcal vert, subs for fx w routn heal"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "skill_name": "MongoDb",
+    "skill_description": "Displaced transverse fx right acetab, subs for fx w nonunion"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "skill_name": "Docker",
+    "skill_description": "Laceration w fb of unsp lesser toe(s) w damage to nail"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    "skill_name": "Test Driven Development",
+    "skill_description": "Nondisplaced oblique fracture of shaft of unsp tibia, init"
+  }
+]

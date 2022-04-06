@@ -25,10 +25,10 @@ const Header = () => {
         height: "600px",
       }}
     >
-      <h1 className="text-white font-bold text-4xl tracking-tight">
+      <h1 className="text-white font-bold text-7xl tracking-tight">
         I&apos;m Svetozar Gospodinov
       </h1>
-      <p className="text-white font-normal py-8 text-lg">
+      <p className="text-white font-normal py-8 text-3xl">
         Mid level Web developer from Varna
       </p>
       <button

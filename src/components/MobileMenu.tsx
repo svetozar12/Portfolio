@@ -17,7 +17,7 @@ const MobileMenu = () => {
     >
       <li className="pb-8 w-full">
         <a
-          className="text-me_gray w-full block text-center opacity-75 duration-200 hover:opacity-100 text-sm font-medium"
+          className="text-me_gray w-full block text-center opacity-75 duration-200 hover:opacity-100 text-3xl font-medium"
           href="#"
         >
           HOME
@@ -25,7 +25,7 @@ const MobileMenu = () => {
       </li>
       <li className="pb-8 w-full">
         <a
-          className="text-me_gray w-full block text-center opacity-75 duration-200 hover:opacity-100 text-sm font-medium"
+          className="text-me_gray w-full block text-center opacity-75 duration-200 hover:opacity-100 text-3xl font-medium"
           href="#"
         >
           CONTACT

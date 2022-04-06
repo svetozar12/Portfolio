@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div
       style={{ zIndex: "4" }}
-      className={`px-4 w-full flex absolute justify-between items-center mt-5`}
+      className={`px-4 w-3/5 top-0 right-0 left-0 mx-auto flex absolute justify-between items-center mt-5 px-auto`}
     >
       <a
         className={`${state.toggleNav && "pointer-events-none select-none"}`}

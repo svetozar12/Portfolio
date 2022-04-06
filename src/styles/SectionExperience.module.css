@@ -1,0 +1,15 @@
+.description {
+  display: block;
+  text-align: center;
+}
+
+.desktop_width {
+  width: 55%;
+}
+
+@media only screen and (max-width: 986px) {
+  .description {
+    display: none;
+    text-align: center;
+  }
+}
