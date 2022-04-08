@@ -3,6 +3,7 @@ import { Section_Header } from "./Section_Header";
 import Footer from "./Footer";
 import data from "../data/projects.json";
 import style from "../styles/SectionProject.module.css";
+
 const SectionProjects = () => {
   return (
     <div>

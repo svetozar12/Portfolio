@@ -1,6 +1,24 @@
 import React from "react";
 import { Section_Header } from "./Section_Header";
 import Image from "next/image";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
+export const Icons = () => {
+  return (
+    <div className="flex mt-4" id="contacts">
+      <a target="new_blank" href="https://github.com/svetozar12">
+        <AiFillGithub className="w-20 h-20 hover:opacity-20 duration-300" />
+      </a>
+      <a
+        target="new_blank"
+        href="https://www.linkedin.com/in/svetozar-gospodinov-58657b236/"
+      >
+        <AiFillLinkedin className="w-20 h-20 hover:opacity-20 duration-300" />
+      </a>
+    </div>
+  );
+};
+
 const Footer = () => {
   return (
     <div className="flex flex-col items-center justify-center relative py-24">
@@ -19,9 +37,7 @@ const Footer = () => {
         text_content="Interested in working with me ?"
         text_color="white"
       />
-      <button className="px-1.5 py-4 w-60 bg-red-500 text-white rounded-full leading-5 tracking-widest text-xm font-bold hover:opacity-75 duration-500">
-        Let&apos;s talk
-      </button>
+      <Icons />
       <div>
         {/* <Image />
         <Image /> */}
