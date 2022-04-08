@@ -2,12 +2,15 @@
   position: fixed;
   bottom: 15px;
   left: calc(100% - 75px);
-  transition: all 0.5s ease-in-out;
+  animation: shine 1s;
 }
 
-.pre_transformed_button {
-  position: absolute;
-  bottom: calc(50% - 25%);
-  left: calc(50% - 110px);
-  transition: all 0.5s ease-in-out;
+@keyframes shine {
+  0% {
+    background-position: top left;
+  }
+  28%,
+  100% {
+    background-position: bottom right;
+  }
 }

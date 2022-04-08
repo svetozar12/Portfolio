@@ -31,12 +31,12 @@ const Hamburger = () => {
         </div>
       </div>
       <div className={style.menu}>
-        <ul className="flex justify-center items-center">
-          <li className="px-1">
-            <a href="">Home</a>
+        <ul className="flex justify-center items-center w-8 text-white text-xl font-semibold">
+          <li className="px-1 opacity-75 hover:opacity-100 mr-4 duration-500">
+            <a href="">HOME</a>
           </li>
-          <li className="px-1">
-            <a href="">Contact</a>
+          <li className="px-1 opacity-75 hover:opacity-100 mr-4 duration-500">
+            <a href="">CONTACT</a>
           </li>
         </ul>
       </div>

@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         me_purple: "#563cc9",
         me_gray: "#525962",
+        me_gray_secondary: "#8c93bd",
       },
     },
   },

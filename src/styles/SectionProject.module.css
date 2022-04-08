@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 66%;
+  height: 18rem;
+  flex-direction: row;
+  transition: 0.2s;
+}
+
+.container:hover {
+  width: 68%;
+  transition: 0.2s;
+}
+
+.description {
+  text-align: right;
+}
+
+.image {
+  position: unset;
+  top: unset;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    height: 40rem;
+    transition: 0.2s;
+  }
+
+  .container:hover {
+    width: 85%;
+    transition: 0.2s;
+  }
+
+  .description {
+    text-align: center;
+  }
+  .image {
+    position: absolute;
+    top: 0;
+  }
+}

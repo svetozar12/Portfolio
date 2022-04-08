@@ -1,6 +1,13 @@
 .description {
   display: block;
   text-align: center;
+  margin-top: 15px;
+  font-family: Lora, serif;
+  font-size: 15;
+  line-height: 1.73;
+  letter-spacing: 0.5px;
+  color: #626881;
+  height: 6rem;
 }
 
 .desktop_width {

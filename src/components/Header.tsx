@@ -4,13 +4,15 @@ import Image from "next/image";
 import { AiFillMessage } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { IInitialSet } from "../redux/reducers/setReducer/state";
+import useVisibility from "../utils/useIsVisible";
 import wave from "../../public/curveNegative.svg";
 const Header = () => {
+  const [isVisible, elementRef] = useVisibility<HTMLParagraphElement>(100);
   const state = useSelector(
     (state: { setReducer: IInitialSet }) => state.setReducer,
   );
 
-  const buttonMessage = state.isBottom ? (
+  const buttonMessage = !isVisible ? (
     <div className="bg-red-500 w-16 h-16 rounded-full flex justify-center items-center duration-500">
       <AiFillMessage className="w-8 h-8 text-white" />
     </div>
@@ -28,12 +30,12 @@ const Header = () => {
       <h1 className="text-white font-bold text-7xl tracking-tight">
         I&apos;m Svetozar Gospodinov
       </h1>
-      <p className="text-white font-normal py-8 text-3xl">
+      <p ref={elementRef} className="text-white font-normal py-8 text-3xl">
         Mid level Web developer from Varna
       </p>
       <button
         className={`${
-          !state.isBottom
+          isVisible
             ? `${style.pre_transformed_button} px-1.5 py-4 w-60 bg-white text-me_purple rounded-full leading-5 tracking-widest text-xm font-bold hover:opacity-75`
             : style.post_transformed_button
         } duration-500`}

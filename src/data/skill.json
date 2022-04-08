@@ -1,0 +1,56 @@
+[
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "skill_name": "HTML",
+    "skill_description": "I'm able to write and structure html and html5 Site Skeleton.",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(255,207,187,1) 0%, rgba(255,157,151,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "skill_name": "CSS",
+    "skill_description": "Creation of adaptive design, desktop or mobile first.",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(235,251,255,1) 0%, rgba(160,192,251,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "skill_name": "javaScript",
+    "skill_description": "Writing es6+ javaScript and creating dynamic sites",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(250,251,253,1) 0%, rgba(255,219,165,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg",
+    "skill_name": "React/NextJs",
+    "skill_description": "Proficient in both react and nextjs",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(255,255,255,1) 0%, rgba(179,179,179,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "skill_name": "Nodejs/ExpressJs",
+    "skill_description": "Creation of a high-performance web server application.",
+    "bg_color_gradient": "rgba(0, 0, 0, 0) linear-gradient(-10deg, rgb(251, 251, 253) 0%, rgb(206, 255, 150) 45%) repeat scroll 0% 0%"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    "skill_name": "GraphQl-Api/Rest-Api",
+    "skill_description": "Creation of GraphQl & REST APIs.",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(255,217,230,1) 0%, rgba(255,200,231,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "skill_name": "MongoDb",
+    "skill_description": "Utilizing Nosql and SQL databases for data storage.",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(251,251,253,1) 0%, rgba(126,227,177,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "skill_name": "Docker",
+    "skill_description": "Dockerizing the web application to operate across all environments.",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(235,251,255,1) 0%, rgba(160,230,255,1) 45%)"
+  },
+  {
+    "skill_icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
+    "skill_name": "Test Driven Development",
+    "skill_description": "Write tests to make sure my code is functioning.",
+    "bg_color_gradient": "linear-gradient(-10deg, rgba(250,218,226,1) 0%, rgba(182,125,139,1) 45%)"
+  }
+]

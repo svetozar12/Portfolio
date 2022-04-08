@@ -1,16 +1,14 @@
 import React from "react";
-import data from "../skill.json";
-import Image from "next/image";
+import data from "../data/skill.json";
 import style from "../styles/SectionExperience.module.css";
+import { Section_Header } from "./Section_Header";
+
 const SectionExperience = () => {
   return (
     <div
       className={`flex items-center justify-center flex-col ${style.desktop_width} mx-auto`}
     >
-      <h1 className="py-5 w-full text-center text-5xl font-medium flex items-center flex-col">
-        My stack
-        <div className="border-2 border-red-500 rounded-full w-10 h-0 mt-5"></div>
-      </h1>
+      <Section_Header text_content="My Stack" text_color="" />
       <div className="flex flex-wrap justify-center">
         {data.map(
           (
@@ -18,19 +16,27 @@ const SectionExperience = () => {
               skill_icon: string;
               skill_name: string;
               skill_description?: string;
+              bg_color_gradient: string;
             },
             index,
           ) => {
             return (
               <div
-                className="w-56 h-56 mx-4 flex items-center justify-center flex-col"
+                className="w-58 h-58 mx-4 flex items-center justify-center flex-col bg-white"
+                style={{ maxWidth: "14rem", maxHeight: "14rem" }}
                 key={index}
               >
                 <div
-                  className={`flex items-center justify-center flex-col bg-red-300 w-24 h-24 rounded-full`}
+                  style={{
+                    background: item.bg_color_gradient,
+                    maxWidth: "6rem",
+                    maxHeight: "6rem",
+                  }}
+                  className={`flex items-center justify-center flex-col w-24 h-24 rounded-full`}
                 >
                   <img
                     src={item.skill_icon}
+                    className="hover:w-20 duration-300"
                     width="60px"
                     height="60px"
                     alt={item.skill_name}
